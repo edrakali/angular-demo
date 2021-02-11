@@ -65,7 +65,7 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, { useHash: true }),
   ],
 
   // add all course services here

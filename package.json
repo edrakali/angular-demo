@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy:ng": "ng build --prod --base-href='https://edrakali.github.io/angular-demo/' and ngh"
   },
   "private": true,
   "dependencies": {
