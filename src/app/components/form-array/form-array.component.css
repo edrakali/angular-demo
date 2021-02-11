@@ -1,0 +1,6 @@
+.remove-list-item {
+    float: right;
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let course of courses; index as i; even as even">
+        <span>{{i}} - {{course}}</span> <button (click)="remove(course)">Remove</button>
+        
+    </li>
+    <button (click)="add()">Add</button>
+</ul>

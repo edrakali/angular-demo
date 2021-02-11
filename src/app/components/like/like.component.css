@@ -1,0 +1,11 @@
+.fa-heart {
+    color: #ccc;
+}
+
+.fa-heart.liked {
+    color: deeppink;
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+}

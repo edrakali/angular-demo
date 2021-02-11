@@ -1,0 +1,29 @@
+<div [formGroup]="form">
+    <div class="form-group">
+        <input 
+        type="text" 
+        class="form-control"
+        formControlName="newTopic"
+        (keyup.enter)="addTopic()"
+        (focus)="focus=true" (blur)="focus=false"
+        >
+        <div class="alert alert-danger"
+        *ngIf="focus && newTopic.invalid"
+        >
+            This field is required
+        </div>
+    </div>
+    <div class="list-group">
+        <div class="list-group-item"
+        *ngFor="let topic of topics"
+        
+        >
+            {{topic.value}}
+            <span 
+            class="remove-list-item" 
+            (click)="removeListItem(topic)">
+                Remove
+            </span>
+        </div>
+    </div>
+</div>

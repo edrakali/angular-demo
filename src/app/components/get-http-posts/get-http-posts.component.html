@@ -1,0 +1,19 @@
+<form class="form" [formGroup]="form" #f="ngForm">
+    <input type="text" 
+    class="form-control"
+    (keyup.enter)="createPost()"
+    (focus)="focus=true"
+    (blur)="focus=false"
+    formControlName="newPost"
+    >
+    <div class="alert alert-danger"
+        *ngIf="focus && newPost.errors"
+    >
+        <div *ngIf="newPost.errors.required">This field is required</div>
+    </div>
+
+    <!-- {{newPost.errors | json}} -->
+</form>
+<ul>
+    <li *ngFor="let post of posts">{{post.title}}</li>
+</ul>

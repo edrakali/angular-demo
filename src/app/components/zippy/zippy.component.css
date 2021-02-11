@@ -1,0 +1,31 @@
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.zippy {
+    border: solid 1px #ccc;
+    padding: 0px;
+}
+
+.zippy-heading {
+    font-weight: bold;
+    background-color: #ccc;
+    /* cursor: pointer; */
+    cursor: url('../../../assets/no-cursor.png');
+    padding: 20px;
+}
+
+.zippy-body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+}
+
+.fa {
+    float: right;
+}
+.expanded {
+    background-color: white;
+    
+}
